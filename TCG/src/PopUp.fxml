@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="430.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PopUpController">
+   <children>
+      <Button fx:id="UseCard" layoutX="14.0" layoutY="381.0" mnemonicParsing="false" onAction="#playCard" prefHeight="35.0" prefWidth="95.0" text="Use Card" />
+      <Button fx:id="CloseButton" layoutX="211.0" layoutY="381.0" mnemonicParsing="false" onAction="#close" prefHeight="35.0" prefWidth="95.0" text="Return" />
+      <ImageView fx:id="CardView" fitHeight="300.0" fitWidth="230.0" layoutX="45.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="PlayAsManaButton" layoutX="113.0" layoutY="381.0" mnemonicParsing="false" onAction="#PlayAsManaButtonPushed" prefHeight="35.0" prefWidth="95.0" text="Play as Mana" />
+      <TextField fx:id="CardCost" alignment="CENTER" editable="false" layoutX="55.0" layoutY="299.0" prefHeight="39.0" prefWidth="41.0" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="CardName" alignment="CENTER" editable="false" layoutX="84.0" layoutY="56.0" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="CardStats" alignment="CENTER" editable="false" layoutX="102.0" layoutY="306.0" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="Description" editable="false" layoutX="70.0" layoutY="244.0" prefHeight="55.0" prefWidth="181.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

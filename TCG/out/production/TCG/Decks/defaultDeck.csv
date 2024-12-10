@@ -1,0 +1,16 @@
+Name,Attack,HP,Cost,Type
+CSStudent,1,2,2,Creature,2,Can you show me in java?
+SenseiDabish,3,2,3,Creature,3,A for the Day!
+SDSUPolice,3,4,4,Creature,3,test
+PandaExpressEmployee,2,1,2,Creature,2,We are out of Orange Chicken.
+TA,1,1,1,Creature,1,test
+CSStudent,1,2,2,Creature,2,Can you show me in java?
+PandaExpressEmployee,2,1,2,Creature,2,We are out of Orange Chicken.
+TA,1,1,1,Creature,1,test
+CSStudent,1,2,2,Creature,2,Can you show me in java?
+Skateboard,1,1,1,Item,0,Add 1/1 to any creature card in play.
+Coffee,0,2,1,Spell,0,test
+FootballPlayer,2,3,3,Creature,2,Sports and stuff.
+FraternityMember,3,1,3,Creature,2,test
+Skater,2,2,2,Creature,2, Totally dude.
+HotCoffee,2,0,1,Spell,0,Ouch... its really hot! (Deal 2 damage to any creature card the opponent controls)

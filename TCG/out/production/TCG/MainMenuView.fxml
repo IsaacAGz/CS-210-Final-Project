@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenuViewController">
+   <children>
+      <ImageView fx:id="MainMenuBackground" fitHeight="800.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/MenuBackground.png" />
+         </image></ImageView>
+      <Button fx:id="PlayButton" layoutX="555.0" layoutY="375.0" mnemonicParsing="false" onAction="#playButtonPushed" prefHeight="50.0" prefWidth="90.0" text="Play" />
+      <Button fx:id="DeckButton" layoutX="555.0" layoutY="448.0" mnemonicParsing="false" onAction="#deckButtonPushed" prefHeight="50.0" prefWidth="90.0" text="Deck" />
+   </children>
+</AnchorPane>

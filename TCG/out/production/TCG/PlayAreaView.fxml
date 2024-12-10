@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="PlayAreaBackgroundPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PlayAreaViewController">
+   <children>
+      <AnchorPane fx:id="MenuPane" layoutX="520.0" layoutY="290.0" prefHeight="200.0" prefWidth="160.0">
+         <children>
+            <ImageView fx:id="MenuBackground" fitHeight="200.0" fitWidth="150.0" layoutX="5.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/NotebookMenubackground.png" />
+               </image></ImageView>
+            <Button fx:id="ExitButton" layoutX="43.0" layoutY="142.0" mnemonicParsing="false" onAction="#exitButtonPushed" prefHeight="25.0" prefWidth="65.0" text="Exit" />
+            <Button fx:id="CloseButton" layoutX="43.0" layoutY="57.0" mnemonicParsing="false" onAction="#closeButtonPushed" prefHeight="25.0" prefWidth="65.0" text="Close" />
+            <Button fx:id="SettingsButton" layoutX="43.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Settings" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="BackgroundView" fitHeight="800.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/PlayAreaBackground.png" />
+         </image></ImageView>
+      <ImageView fx:id="NPCDeckImageView" fitHeight="200.0" fitWidth="150.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/PlayerDetails.png" />
+         </image></ImageView>
+      <ImageView fx:id="PlayerDeckImageView" fitHeight="200.0" fitWidth="150.0" layoutX="1036.0" layoutY="586.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/PlayerDetails.png" />
+         </image></ImageView>
+      <ImageView fx:id="NPCIcon" fitHeight="65.0" fitWidth="75.0" layoutX="52.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/NPCIcon.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="PlayerIcon" fitHeight="65.0" fitWidth="75.0" layoutX="1079.0" layoutY="599.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/PlayerIcon.jpg" />
+         </image></ImageView>
+      <Button layoutX="1139.0" layoutY="13.0" mnemonicParsing="false" onAction="#menuButtonPushed" text="Menu" />
+      <Label layoutX="73.0" layoutY="103.0" text="Points:" />
+      <Label layoutX="1094.0" layoutY="673.0" text="Points:" />
+      <Label alignment="CENTER" layoutX="52.0" layoutY="145.0" text="Cards in Deck:" />
+      <Label layoutX="1075.0" layoutY="718.0" text="Cards in Deck:" />
+      <TextField fx:id="PlayerPoints" alignment="CENTER" editable="false" layoutX="1080.0" layoutY="690.0" prefHeight="0.0" prefWidth="65.0" style="-fx-background-color: transparent;" />
+      <TextField fx:id="NPCPoints" alignment="CENTER" editable="false" layoutX="57.0" layoutY="120.0" prefHeight="0.0" prefWidth="65.0" style="-fx-background-color: transparent;" />
+      <TextField fx:id="NPCDeckCount" alignment="CENTER" editable="false" layoutX="57.0" layoutY="162.0" prefHeight="0.0" prefWidth="65.0" style="-fx-background-color: transparent;" />
+      <TextField fx:id="PlayerDeckCount" alignment="CENTER" editable="false" layoutX="1080.0" layoutY="735.0" prefHeight="0.0" prefWidth="65.0" style="-fx-background-color: transparent;" />
+      <ImageView fx:id="PlayerTurn" fitHeight="150.0" fitWidth="500.0" layoutX="350.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <ImageView fx:id="OpponentTurn" fitHeight="150.0" fitWidth="500.0" layoutX="350.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <HBox fx:id="PlayerHand" layoutX="180.0" layoutY="615.0" prefHeight="150.0" prefWidth="800.0" />
+      <HBox fx:id="OpponentHand" layoutX="180.0" layoutY="-61.0" prefHeight="150.0" prefWidth="800.0" />
+      <HBox fx:id="PlayerActiveCards" layoutX="127.0" layoutY="416.0" prefHeight="150.0" prefWidth="800.0" />
+      <HBox fx:id="OpponentActiveCards" layoutX="127.0" layoutY="231.0" prefHeight="150.0" prefWidth="800.0" />
+      <TextField fx:id="Player2ManaCounter" alignment="CENTER" editable="false" layoutX="15.0" layoutY="218.0" style="-fx-background-color: transparent;" />
+      <TextField fx:id="Player1ManaCounter" alignment="CENTER" editable="false" layoutX="1037.0" layoutY="549.0" style="-fx-background-color: transparent;" />
+      <Button layoutX="26.0" layoutY="355.0" mnemonicParsing="false" onAction="#nextPhaseButtonPushed" prefHeight="35.0" prefWidth="80.0" text="Next Phase" />
+      <Button layoutX="26.0" layoutY="400.0" mnemonicParsing="false" onAction="#endTurnButtonPushed" prefHeight="35.0" prefWidth="80.0" text="End Turn" />
+   </children>
+</AnchorPane>
